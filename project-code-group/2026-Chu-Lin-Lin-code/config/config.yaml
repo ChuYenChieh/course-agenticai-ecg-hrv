@@ -3,7 +3,7 @@
 
 dataset:
   name: custom_csv
-  data_dir: C:/Users/julia/2026_Agentic_AI/course-agenticai-ecg-hrv/data-group/data
+  data_dir: C:/Users/julia/2026_Agentic_AI/course-agenticai-ecg-hrv/data-group/2026-Chu-Lin-Lin-data/data
   persons:
     - id: first_person
       conditions:
