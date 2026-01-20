@@ -135,7 +135,7 @@ uv pip install -r requirements.txt
 ---
 
 ## Dataset Setup
-
+```
 1.Expected directory structure:
     data-group/data/
     ├── first_person/
@@ -149,8 +149,7 @@ uv pip install -r requirements.txt
     │ ├── *.csv
     └── Active/
     ├── *.csv
-
-
+```
 Each CSV file contains a single ECG recording with associated timestamps and sensor values.  
 Recordings are organized by **subject** (`first_person`, `second_person`) and **physiological condition** (`Rest`, `Active`).
 
@@ -309,19 +308,6 @@ python -m pytest tests/test_comprehensive.py -v
 # Generate test report (runs pytest and creates markdown report)
 python tests/generate_test_report.py
 ```
----
-
-### Test Files
-
-| File | Tests | Description |
-|------|-------|-------------|
-| `test_tools.py` | ~20 | Unit tests for core tool modules |
-| `test_classifier.py` | ~30 | Tests for all 20 classifiers (training + save/load) |
-| `test_extended_features.py` | ~15 | Tests for HRV feature extraction functions |
-| `test_orchestrator.py` | ~10 | Tests for orchestrator dataset analysis |
-| `test_comprehensive.py` | **85** | All parameter variations, all classifiers, signal processor |
-| `test_helpers.py` | ~30 | Tests for utility functions (logging, config, validation) |
-| `test_report_generator.py` | ~12 | Tests for report generator non-visual functions |
 
 ---
 
